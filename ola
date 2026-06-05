@@ -92,7 +92,8 @@
 
   <script>
     function aceitar() {
-      window.location.href = "sim.html";
+      // Usamos o link direto para o GitHub não dar erro 404
+      window.location.href = "https://bosini47.github.io/Surpresa/sim.html";
     }
 
     function recusar() {
