@@ -49,6 +49,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      align-items: center;
     }
 
     .card {
@@ -57,15 +58,10 @@
       padding: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       backdrop-filter: blur(4px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .card img {
       width: 100%;
-      height: 220px;
-      object-fit: cover;
       display: block;
       border-radius: 14px;
     }
@@ -124,16 +120,15 @@
 
     <div class="grid">
       <div class="card">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z0b2NtcTN3ZXR6cHloOHd5bTZwdnZmbG1kcTkyYmNidWw4YmR4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/14stZTMhcclIo/giphy.gif" alt="Minions Love">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Y0MDN6bXkyODZ6b3ZlbThmZWh5N3M4b3RpdXpkZzZ5NXF6N3R1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/11rIloSM7PpQBy/giphy.gif" alt="Groot Dançar">
       </div>
+      
       <div class="card">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW1wYmhhZHFvczFmbmhrOHFpZnVhcDBuY3EwM3RxMms0dTZmZmV2NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/11vDNL1PrUUo0/giphy.gif" alt="Ursos Carinhosos">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z0b2NtcTN3ZXR6cHloOHd5bTZwdnZmbG1kcTkyYmNidWw4YmR4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/14stZTMhcclIo/giphy.gif" alt="Minions Apaixonados">
       </div>
+      
       <div class="card">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnd6N3Z5M3g2ajVwdG96cXg0bTB6M3A4dDZ3ZnV3b3lqNXNidGZpNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/du9PSxaAgmZf3b9SxF/giphy.gif" alt="Stitch Feliz">
-      </div>
-      <div class="card">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms1ODgyYnVpZ3p5bTF6b283Y3p0dnA3ZWRvczVnZnB2MHlsZm9hNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/EvYHHSntaIl5m/giphy.gif" alt="Amor e Felicidade">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms1ODgyYnVpZ3p5bTF6b283Y3p0dnA3ZWRvczVnZnB2MHlsZm9hNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/EvYHHSShared/giphy.gif" alt="Preguiça Feliz">
       </div>
     </div>
   </div>
@@ -146,8 +141,9 @@
       heart.className = "heart";
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.bottom = "-40px";
-      heart.style.animationDuration = (6 + Math.random() * 8)s;
-      heart.style.animationDelay = (Math.random() * 6)s;
+      // Corrigido o pequeno erro de sintaxe nos segundos da animação
+      heart.style.animationDuration = (6 + Math.random() * 8) + "s";
+      heart.style.animationDelay = (Math.random() * 6) + "s";
       heart.style.transform = `translateY(0) rotate(45deg) scale(${0.6 + Math.random() * 1.4})`;
       fundo.appendChild(heart);
     }
