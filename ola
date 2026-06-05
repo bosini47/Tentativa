@@ -92,7 +92,7 @@
 
   <script>
     function aceitar() {
-      window.location.href = "./sim.html";
+      window.location.href = "sim.html";
     }
 
     function recusar() {
