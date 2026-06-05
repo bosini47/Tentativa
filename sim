@@ -128,7 +128,7 @@
       </div>
       
       <div class="card">
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbms1ODgyYnVpZ3p5bTF6b283Y3p0dnA3ZWRvczVnZnB2MHlsZm9hNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/EvYHHSShared/giphy.gif" alt="Preguiça Feliz">
+        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnd6N3Z5M3g2ajVwdG96cXg0bTB6M3A4dDZ3ZnV3b3lqNXNidGZpNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9S/du9PSxaAgmZf3b9SxF/giphy.gif" alt="Stitch Feliz">
       </div>
     </div>
   </div>
@@ -141,7 +141,6 @@
       heart.className = "heart";
       heart.style.left = Math.random() * 100 + "vw";
       heart.style.bottom = "-40px";
-      // Corrigido o pequeno erro de sintaxe nos segundos da animação
       heart.style.animationDuration = (6 + Math.random() * 8) + "s";
       heart.style.animationDelay = (Math.random() * 6) + "s";
       heart.style.transform = `translateY(0) rotate(45deg) scale(${0.6 + Math.random() * 1.4})`;
