@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ela disse SIM ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        180deg,
+        #ff77b7,
+        #ff9ed1,
+        #ffd6f0,
+        #fff1a8,
+        #a6f0ff
+    );
+    overflow-x:hidden;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-top:40px;
+    font-size:4rem;
+    color:#ff2b7a;
+    text-shadow:3px 3px 10px rgba(255,255,255,.8);
+}
+
+p{
+    font-size:1.5rem;
+    color:#7a0051;
+    margin-top:10px;
+}
+
+.rainbow{
+    width:300px;
+    margin:30px auto;
+    display:block;
+}
+
+.galeria{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.5);
+    padding:15px;
+    border-radius:20px;
+    backdrop-filter:blur(4px);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}
+
+.coracoes{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.coracao{
+    position:absolute;
+    color:rgba(255,0,90,.3);
+    animation:subir linear infinite;
+}
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-150px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Ela disse SIM!</h1>
+
+<p>Agora é só felicidade, amor e momentos incríveis ❤️</p>
+
+<img
+class="rainbow"
+src="https://media.giphy.com/media/l378khQxt68syiWJy/giphy.gif"
+alt="Arco-íris"
+/>
+
+<div class="galeria">
+
+    <div class="card">
+        <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+    </div>
+
+    <div class="card">
+        <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif">
+    </div>
+
+    <div class="card">
+        <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif">
+    </div>
+
+    <div class="card">
+        <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+    </div>
+
+</div>
+
+<div class="coracoes" id="coracoes"></div>
+
+<script>
+
+const container=document.getElementById("coracoes");
+
+for(let i=0;i<35;i++){
+
+    const heart=document.createElement("div");
+
+    heart.className="coracao";
+    heart.innerHTML="❤";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(20+Math.random()*40)+"px";
+    heart.style.animationDuration=(6+Math.random()*8)+"s";
+
+    container.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
